@@ -1,0 +1,143 @@
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+} 
+a{
+    color: inherit;
+}
+.container{
+    background-color: #b80d13;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: black;
+}
+.logo{
+    font-size: 2rem;
+    color: #b80d13;
+      text-shadow: 2px 2px  white;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.menu li{
+    color: white;
+    font-size: 1.2rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info__text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 30px;
+    gap: 1.5rem;
+    width: 50%;
+}
+.info__text h1{
+  font-size: 3rem;
+  color: aliceblue;
+  text-shadow: 4px 4px  black;
+}
+.info__text p{
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+.info__text button{
+    border: none;
+    background-color: white;
+    color: #b80d13;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    width: 150px;
+}
+.info__text button span{
+   color: black;
+}
+.info__img{
+    background-color: white;
+    border-radius: 50%;
+    padding: 70px 0;
+    width: 39%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.info__img img{
+    transition: 1s;
+    width: 170px;
+    height: 400px;
+    animation: cola 10s infinite ease;
+}
+@keyframes cola{
+    10%{
+        transform: rotate(-8deg);
+    }
+    20%{
+        transform: rotate(8deg);
+    }
+    30%{
+        transform: rotate(-8deg);
+    }
+    40%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    60%{
+        transform: rotate(8deg);
+    }
+    70%{
+        transform: rotate(-8deg);
+    }
+    80%{
+        transform: rotate(8deg);
+    }
+    90%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+
+}
+.images{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:20% ;
+    margin: 0 auto;
+    bottom: 30px;
+}
+.images li img{
+    width: 30px;
+}
+.images li img:hover{
+    transition: 1s;
+    transform: translateY(-15px);
+}
+
+@media (max-width: 400px){
+    .header{
+        flex-direction: column;
+    }
+}
